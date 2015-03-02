@@ -1,16 +1,14 @@
-nx300m-autobackup
+nx30-autobackup
 =================
 
 When this set of scripts is configured correctly, the
-Samsung NX300M will automatically backup all photos and
+Samsung NX30 will automatically backup all photos and
 videos via scp whenever the camera is turned on.
 
+Based on https://github.com/jdieter/nx300m-autobackup and modified to work with the NX30.
+
 ##Installing##
-To use this, your camera must be using the 1.10 camera body
-firmware.  I've tested on the 1.13 firmware, and it doesn't
-work with that.  I've not tested 1.11 or 1.12, so it may or
-may not work with those revisions.  You can downgrade your
-camera's firmware to 1.10 with minimal effort.
+Tested on version XXXX of the firmware. It may or may not work on other versions.
 
 Copy the contents of the sdcard directory onto the sdcard
 from the camera.
@@ -39,16 +37,5 @@ file to the backup server.  After all the new files have
 been sent, it shuts down the WiFi connection and the "keep
 alive" script.
 
-##To Do##
-1. Keep-alive script currently sends keypresses to the
-display, keeping the display on as well as the camera.  I'd
-like to find a way to just keep the camera on while letting
-the display go off.
-2. Use smbclient so you can autobackup to Windows without
-using Samsung's software (not sure whether this is worth
-the effort).
-3. See if we can somehow get the camera to wake up to
-automatically run the backup without having to manually
-turn it on.
-4. Show a pretty backup status in the corner of the screen
-as the backup runs.
+## TODO
+1. Get it to work.
